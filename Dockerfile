@@ -7,5 +7,5 @@ RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page4
 RUN unzip gazebo.zip 
 RUN cp -rvf gazebo/* .
 RUN rm -rf gazebo.zip gazebo
-EXPOSE 80 22 8001 8081
+EXPOSE 80 22  8081
 #Here you can test centos as well
