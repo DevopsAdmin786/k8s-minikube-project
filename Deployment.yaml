@@ -15,11 +15,12 @@ spec:
       labels:
         app: web
         #deployer: distelli
-    spec: 
+    spec:
       containers:
       - name: mywebapp
         image: devopsadmin786/demopipeline
+        command: ["service nginx start"]
+          #args: ["-c", "service nginx start"]
         imagePullPolicy: Always
         ports:
         - containerPort: 80
-
