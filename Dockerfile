@@ -4,10 +4,13 @@ RUN apt-get update -y
 RUN apt-get install  nginx -y
 RUN  apt-get install  zip  \
 wget -y
+CMD ["service","nginx","start"]
+# ENTRYPOINT [ "service nginx start" ]
 WORKDIR /var/www/html
 RUN wget https://www.free-css.com/assets/files/free-css-templates/download/page43/gazebo.zip
 RUN unzip gazebo.zip
 RUN cp -rvf gazebo/* .
 RUN rm -rf gazebo.zip gazebo
-EXPOSE 80 22  8081
+EXPOSE 80
+
 #Here you can test centos as well
