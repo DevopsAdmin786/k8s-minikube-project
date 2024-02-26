@@ -19,7 +19,7 @@ spec:
       containers:
       - name: mywebapp
         image: devopsadmin786/demopipeline
-        command: ["service nginx start"]
+        #command: ["service nginx start"]
           #args: ["-c", "service nginx start"]
         imagePullPolicy: Always
         ports:
