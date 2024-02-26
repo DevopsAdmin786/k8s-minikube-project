@@ -12,5 +12,4 @@ RUN unzip gazebo.zip
 RUN cp -rvf gazebo/* .
 RUN rm -rf gazebo.zip gazebo
 EXPOSE 80 8081
-
 #Here you can test centos as well

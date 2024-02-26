@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: mywebapp
+  labels:
+    app: web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+      #deployer: distelli
+  template:
+    metadata:
+      labels:
+        app: web
+        #deployer: distelli
+    spec: 
+      containers:
+      - name: web_container
+        image: devopsadmin786/demopipeline
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+
