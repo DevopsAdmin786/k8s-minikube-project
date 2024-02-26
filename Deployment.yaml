@@ -17,7 +17,7 @@ spec:
         #deployer: distelli
     spec: 
       containers:
-      - name: web_container
+      - name: mywebapp
         image: devopsadmin786/demopipeline
         imagePullPolicy: Always
         ports:
