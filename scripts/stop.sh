@@ -1,6 +1,4 @@
 #!/bin/sh
-#systemctl stop mfr
-#pm2 stop all
 #!/bin/bash
 
 con=`docker ps -a| awk '{print $NF}'| grep -wi "processing-queue"`
