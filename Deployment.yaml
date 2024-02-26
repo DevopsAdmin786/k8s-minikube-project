@@ -3,24 +3,22 @@ kind: Deployment
 metadata:
   name: mywebapp
   labels:
-    app: web
+    app: mywebapp
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: web
+      app: mywebapp
       #deployer: distelli
   template:
     metadata:
       labels:
-        app: web
+        app: mywebapp
         #deployer: distelli
     spec:
       containers:
       - name: mywebapp
         image: devopsadmin786/demopipeline
-        #command: ["service nginx start"]
-          #args: ["-c", "service nginx start"]
         imagePullPolicy: Always
         ports:
         - containerPort: 80
