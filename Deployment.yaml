@@ -18,7 +18,7 @@ spec:
     spec:
       containers:
       - name: mywebapp
-        image: devopsadmin786/demopipeline
+        image: devopsadmin786/minikubepipeline
         imagePullPolicy: Always
         ports:
         - containerPort: 80
