@@ -12,4 +12,4 @@ RUN rm -rf mediplus-lite.zip mediplus-lite
 EXPOSE 80 
 # Note :- nginx should be start via docker exec - <container name> service nginx start
 CMD ["nginx", "-g", "daemon off;"]
-#Here you can test centos as well
+
